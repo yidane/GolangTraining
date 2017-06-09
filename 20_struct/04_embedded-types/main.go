@@ -36,4 +36,13 @@ func main() {
 
 	fmt.Println(p1.First, p1.Last, p1.Age, p1.LicenseToKill)
 	fmt.Println(p2.First, p2.Last, p2.Age, p2.LicenseToKill)
+
+	// p3 := doubleZero{
+	// 	First:         "yidane", //error
+	// 	Last:          "yinsw", //error
+	// 	Age:           18, //error
+	// 	LicenseToKill: true,
+	// }
+
+	// fmt.Println(p3.First, p3.person.First)
 }

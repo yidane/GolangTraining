@@ -13,5 +13,5 @@ func changeMe(z int) {
 	z = 24
 }
 
-// when changeMe is called on line 8
+// when changeMe is called on line 7
 // the value 44 is being passed as an argument
