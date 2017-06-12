@@ -25,7 +25,7 @@ func main() {
 		return
 	}
 
-	res, err := http.Get("http://www.mcleods.com")
+	res, err := http.Get("http://www.weather.com.cn/data/sk/101010100.html")
 	if err != nil {
 		fmt.Println(err)
 		return

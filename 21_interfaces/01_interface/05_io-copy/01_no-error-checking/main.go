@@ -16,7 +16,7 @@ func main() {
 	rdr2 := bytes.NewBuffer([]byte(msg))
 	io.Copy(os.Stdout, rdr2)
 
-	res, _ := http.Get("http://www.mcleods.com")
+	res, _ := http.Get("http://www.weather.com.cn/data/sk/101010100.html")
 	io.Copy(os.Stdout, res.Body)
 	res.Body.Close()
 }

@@ -5,12 +5,11 @@ import (
 )
 
 func main() {
-
 	c := make(chan int)
 	done := make(chan bool)
 
 	go func() {
-		for i := 0; i < 100000; i++ {
+		for i := 0; i < 10; i++ {
 			c <- i
 		}
 		close(c)
@@ -18,14 +17,14 @@ func main() {
 
 	go func() {
 		for n := range c {
-			fmt.Println(n)
+			fmt.Println("1:", n)
 		}
 		done <- true
 	}()
 
 	go func() {
 		for n := range c {
-			fmt.Println(n)
+			fmt.Println("2:", n)
 		}
 		done <- true
 	}()

@@ -9,7 +9,10 @@ var done chan bool
 
 func main() {
 	done = make(chan bool)
-	c := fanIn(incrementor("1"), incrementor("2"))
+	c1 := incrementor("1")
+	c2 := incrementor("2")
+
+	c := fanIn(c1, c2)
 	for n := range c {
 		fmt.Println(n)
 	}

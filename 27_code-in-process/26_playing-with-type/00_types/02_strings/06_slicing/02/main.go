@@ -8,5 +8,6 @@ func main() {
 	fmt.Println(greeting[:4])
 	fmt.Println(greeting[0:4])
 	fmt.Println(greeting[1:4])
+	fmt.Println(greeting[4:5])
 	fmt.Println(greeting[1:])
 }
